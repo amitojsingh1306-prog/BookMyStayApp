@@ -5,32 +5,22 @@ public class BookMyStayApp {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int choice;
+        System.out.println("\n===== Book My Stay App =====");
 
-        do {
-            System.out.println("\n===== Book My Stay App =====");
-            System.out.println("1. Use Case 1 - Welcome Message");
-            System.out.println("2. Use Case 2");
-            System.out.println("3. Use Case 3");
-            System.out.println("4. Use Case 4");
-            System.out.println("5. Use Case 5");
-            System.out.println("6. Use Case 6");
-            System.out.println("7. Use Case 7");
-            System.out.println("0. Exit");
-            System.out.print("Enter your choice: ");
+        // Display the use case menu
+        for (int i = 1; i <= 7; i++) {
+            System.out.println("Use Case " + i);
+        }
 
-            choice = sc.nextInt();
+        System.out.print("\nEnter the Use Case number you want to run (1-7): ");
+        int choice = sc.nextInt();
 
-            switch (choice) {
-                case 1:
-                    UseCase1BookMyStayApp.execute();
-                    break;
-                case 2:
-                    UseCase2BookMyStayApp.execute();
-                    break;
-            }
-
-        } while (choice != 0);
+        // Execute the selected use case
+        switch (choice) {
+            case 1 -> UseCase1BookMyStayApp.execute();
+            case 2 -> UseCase2BookMyStayApp.execute();
+            default -> System.out.println("Invalid choice! Please enter a number between 1 and 7.");
+        }
 
         sc.close();
     }
