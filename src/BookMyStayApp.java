@@ -28,26 +28,6 @@ public class BookMyStayApp {
                 case 2:
                     UseCase2BookMyStayApp.execute();
                     break;
-                case 3:
-                    UseCase3BookMyStayApp.execute();
-                    break;
-                case 4:
-                    UseCase4BookMyStayApp.execute();
-                    break;
-                case 5:
-                    UseCase5BookMyStayApp.execute();
-                    break;
-                case 6:
-                    UseCase6BookMyStayApp.execute();
-                    break;
-                case 7:
-                    UseCase7BookMyStayApp.execute();
-                    break;
-                case 0:
-                    System.out.println("Exiting application...");
-                    break;
-                default:
-                    System.out.println("Invalid choice!");
             }
 
         } while (choice != 0);
