@@ -16,11 +16,7 @@
  */
 public class UseCase1BookMyStayApp {
 
-    /**
-     * Application entry point
-     */
-    public static void main(String[] args) {
-
+    public static void execute() {   // ⚠️ MUST be static
         System.out.println("Book My Stay App v1.0");
         System.out.println("Welcome to Book My Stay App!");
     }
